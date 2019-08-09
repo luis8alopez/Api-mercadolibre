@@ -17,8 +17,11 @@ export class ProductComponent {
     if (!search) { return; }
     this.products = [];
     this.rest.getProduct(search).subscribe((data: {}) => {
-      this.products = data;
-      console.log(data);
+      // tslint:disable-next-line: no-string-literal
+      this.products = data['results'];
+      // tslint:disable-next-line: no-string-literal
+      console.log(data['results']);
+      console.log(this.products);
     });
   }
 }
