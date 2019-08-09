@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+  
+
+<div style="text-align:center">
+  <h1>
+   Luis Ochoa {{ title }}
+  </h1>
+  <img width="300" alt="Angular Logo" src="https://static.iris.net.co/dinero/upload/images/2013/4/26/174438_1586_1.jpg">
+</div>
+
+
+<div style="text-align: center">
+<input type="text" size="50" value="prod" ngModel="">
+
+<button (click)="getProduct(prod)" mat-raised-button>search</button>
+
+
+
+<div *ngIf="products" class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{products.price}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+</div>
