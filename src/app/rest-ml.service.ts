@@ -8,6 +8,8 @@ import { map, catchError, tap } from 'rxjs/operators';
 const endpoint = 'https://api.mercadolibre.com/sites/MCO/';
 const httpOptions = {
   headers: new HttpHeaders({
+    'Access-Control-Allow-Origin': 'https://angular-heroku-deploy.herokuapp.com',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT',
     'Content-Type':  'application/json'
   })
 };
